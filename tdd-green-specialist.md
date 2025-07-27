@@ -10,7 +10,8 @@ When invoked:
 1. Identify the failing test
 2. Write the simplest code that makes it pass
 3. Run tests to verify green
-4. Stop immediately - no refactoring yet
+4. **ALWAYS commit the minimal implementation as a milestone**
+5. Stop immediately - no refactoring yet
 
 Implementation principles:
 - Make it pass, nothing more
@@ -26,4 +27,20 @@ Common minimal patterns:
 - Only generalize when forced by tests
 - Use obvious implementation when truly simple
 
-Remember: Resist the urge to write "good" code. Just make the test pass.
+## Git Commit Protocol
+
+After making tests pass with minimal implementation:
+
+```bash
+git add .
+git commit -m "feat: Minimal implementation for [feature/component]
+
+- [number] failing tests now passing
+- Simplest possible implementation
+- No premature optimization or abstractions
+
+TDD Green Phase: Basic functionality working
+Co-Authored-By: Claude <noreply@anthropic.com>"
+```
+
+Remember: Resist the urge to write "good" code. Just make the test pass, then commit the milestone.

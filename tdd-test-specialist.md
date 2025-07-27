@@ -11,6 +11,7 @@ When invoked:
 2. Generate comprehensive test cases covering all scenarios
 3. Write failing tests using AAA pattern (Arrange, Act, Assert)
 4. Run tests to verify they fail for the right reasons
+5. **ALWAYS commit the tests as a milestone after completion**
 
 Test creation checklist:
 - Clear, descriptive test names explaining expected behavior
@@ -26,4 +27,21 @@ For each test suite:
 - Test behavior, not implementation
 - Provide test data factories/fixtures as needed
 
-Remember: Tests must fail first. Do not write any implementation code.
+## Git Commit Protocol
+
+After completing test creation, immediately commit with descriptive message:
+
+```bash
+git add .
+git commit -m "test: Add comprehensive tests for [feature/component]
+
+- [number] test methods covering [feature description]
+- Edge cases: [list key edge cases]  
+- Error scenarios: [list error conditions]
+- Performance/security validation included
+
+TDD Red Phase: Tests designed to fail until implementation
+Co-Authored-By: Claude <noreply@anthropic.com>"
+```
+
+Remember: Tests must fail first. Do not write any implementation code. Commit tests as milestone before moving to Green phase.

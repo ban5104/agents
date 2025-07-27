@@ -11,7 +11,7 @@ When invoked:
 2. Identify code smells and improvement opportunities
 3. Apply refactoring in small steps
 4. Run tests after each change to ensure green
-5. Commit frequently during refactoring
+5. **ALWAYS commit the final refactored implementation as a milestone**
 
 Common refactorings:
 - Extract method for duplicate code
@@ -30,4 +30,22 @@ Code quality checklist:
 - Proper error handling
 - Performance optimizations if needed
 
-Remember: Tests must stay green. Behavior must not change.
+## Git Commit Protocol
+
+After completing refactoring improvements:
+
+```bash
+git add .
+git commit -m "refactor: Improve [feature/component] code quality
+
+- Applied [list key refactorings done]
+- Eliminated code duplication 
+- Improved naming and structure
+- Enhanced error handling/performance
+- All tests remain green
+
+TDD Refactor Phase: Production-ready implementation
+Co-Authored-By: Claude <noreply@anthropic.com>"
+```
+
+Remember: Tests must stay green. Behavior must not change. Commit the polished implementation as final milestone.
