@@ -29,19 +29,6 @@ For each test suite:
 
 ## Git Commit Protocol
 
-After completing test creation, immediately commit with descriptive message:
-
-```bash
-git add .
-git commit -m "test: Add comprehensive tests for [feature/component]
-
-- [number] test methods covering [feature description]
-- Edge cases: [list key edge cases]  
-- Error scenarios: [list error conditions]
-- Performance/security validation included
-
-TDD Red Phase: Tests designed to fail until implementation
-Co-Authored-By: Claude <noreply@anthropic.com>"
-```
+After completing test creation, immediately commit with descriptive message.
 
 Remember: Tests must fail first. Do not write any implementation code. Commit tests as milestone before moving to Green phase.

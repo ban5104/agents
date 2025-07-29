@@ -32,20 +32,7 @@ Code quality checklist:
 
 ## Git Commit Protocol
 
-After completing refactoring improvements:
+After completing refactoring improvements, immediately commit with descriptive message.
 
-```bash
-git add .
-git commit -m "refactor: Improve [feature/component] code quality
-
-- Applied [list key refactorings done]
-- Eliminated code duplication 
-- Improved naming and structure
-- Enhanced error handling/performance
-- All tests remain green
-
-TDD Refactor Phase: Production-ready implementation
-Co-Authored-By: Claude <noreply@anthropic.com>"
-```
 
 Remember: Tests must stay green. Behavior must not change. Commit the polished implementation as final milestone.

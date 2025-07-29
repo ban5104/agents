@@ -29,18 +29,7 @@ Common minimal patterns:
 
 ## Git Commit Protocol
 
-After making tests pass with minimal implementation:
+After making tests pass with minimal implementation, commit the tests with a descritpive message.
 
-```bash
-git add .
-git commit -m "feat: Minimal implementation for [feature/component]
-
-- [number] failing tests now passing
-- Simplest possible implementation
-- No premature optimization or abstractions
-
-TDD Green Phase: Basic functionality working
-Co-Authored-By: Claude <noreply@anthropic.com>"
-```
 
 Remember: Resist the urge to write "good" code. Just make the test pass, then commit the milestone.
