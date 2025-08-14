@@ -1,6 +1,6 @@
 ---
 name: code-architect
-description: Design architecture for complex features requiring multiple components. Include feature requirements and one similar pattern example.
+description: Design minimal implementation plans for features. Include feature requirements and one existing pattern example for reference.
 model: opus
 color: blue
 ---
